@@ -1,4 +1,11 @@
 Linkedin::Application.routes.draw do
+  resources :jobs
+
+  resources :profiles
+
+  get 'link/index' =>'link#index'
+  get 'link/resume' => 'link#resume'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
